@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FB115C9A2132F3A900A7669F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB115C992132F3A900A7669F /* AppDelegate.swift */; };
-		FB115C9C2132F3A900A7669F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB115C9B2132F3A900A7669F /* ViewController.swift */; };
+		FB115C9C2132F3A900A7669F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB115C9B2132F3A900A7669F /* MainVC.swift */; };
 		FB115C9F2132F3A900A7669F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB115C9D2132F3A900A7669F /* Main.storyboard */; };
 		FB115CA12132F3AA00A7669F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB115CA02132F3AA00A7669F /* Assets.xcassets */; };
 		FB115CA42132F3AA00A7669F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB115CA22132F3AA00A7669F /* LaunchScreen.storyboard */; };
+		FB115CAE2132F50900A7669F /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB115CAD2132F50900A7669F /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB115C962132F3A900A7669F /* Window-Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Window-Shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB115C992132F3A900A7669F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB115C9B2132F3A900A7669F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB115C9B2132F3A900A7669F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FB115C9E2132F3A900A7669F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB115CA02132F3AA00A7669F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB115CA32132F3AA00A7669F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB115CA52132F3AA00A7669F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB115CAD2132F50900A7669F /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		FB115C982132F3A900A7669F /* Window-Shopper */ = {
 			isa = PBXGroup;
 			children = (
-				FB115C992132F3A900A7669F /* AppDelegate.swift */,
-				FB115C9B2132F3A900A7669F /* ViewController.swift */,
+				FB115CAC2132F4E100A7669F /* Views */,
+				FB115CAB2132F3B900A7669F /* Controllers */,
 				FB115C9D2132F3A900A7669F /* Main.storyboard */,
+				FB115C992132F3A900A7669F /* AppDelegate.swift */,
 				FB115CA02132F3AA00A7669F /* Assets.xcassets */,
 				FB115CA22132F3AA00A7669F /* LaunchScreen.storyboard */,
 				FB115CA52132F3AA00A7669F /* Info.plist */,
 			);
 			path = "Window-Shopper";
+			sourceTree = "<group>";
+		};
+		FB115CAB2132F3B900A7669F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB115C9B2132F3A900A7669F /* MainVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FB115CAC2132F4E100A7669F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB115CAD2132F50900A7669F /* CurrencyTxtField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB115C9C2132F3A900A7669F /* ViewController.swift in Sources */,
+				FB115CAE2132F50900A7669F /* CurrencyTxtField.swift in Sources */,
+				FB115C9C2132F3A900A7669F /* MainVC.swift in Sources */,
 				FB115C9A2132F3A900A7669F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
