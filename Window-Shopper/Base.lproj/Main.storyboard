@@ -17,13 +17,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9T-Nq-3mI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9T-Nq-3mI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="JBs-Ob-Xn5">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fxN-vG-fkD">
+                                        <rect key="frame" x="155.5" y="42" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="Eb0-XW-Kzc"/>
+                                            <constraint firstAttribute="height" constant="64" id="Pnz-8q-9mg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Hourly Wage" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGA-Zv-8BP" customClass="CurrencyTxtField" customModule="Window_Shopper" customModuleProvider="target">
+                                        <rect key="frame" x="97.5" y="162" width="180" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="7BE-od-Vao"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="Jan-Lp-Jkd"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="JBs-Ob-Xn5" firstAttribute="top" secondItem="Q9T-Nq-3mI" secondAttribute="top" id="FuX-qe-Ypd"/>
+                                    <constraint firstItem="fxN-vG-fkD" firstAttribute="top" secondItem="Q9T-Nq-3mI" secondAttribute="top" constant="42" id="Keo-0S-Mcs"/>
+                                    <constraint firstItem="xGA-Zv-8BP" firstAttribute="centerX" secondItem="Q9T-Nq-3mI" secondAttribute="centerX" id="PnH-br-me0"/>
+                                    <constraint firstItem="xGA-Zv-8BP" firstAttribute="top" secondItem="fxN-vG-fkD" secondAttribute="bottom" constant="56" id="d4e-dt-s8e"/>
+                                    <constraint firstItem="fxN-vG-fkD" firstAttribute="centerX" secondItem="Q9T-Nq-3mI" secondAttribute="centerX" id="fuw-xS-04g"/>
+                                    <constraint firstItem="JBs-Ob-Xn5" firstAttribute="leading" secondItem="Q9T-Nq-3mI" secondAttribute="leading" id="pxM-rx-eiT"/>
+                                    <constraint firstAttribute="trailing" secondItem="JBs-Ob-Xn5" secondAttribute="trailing" id="q3O-pQ-VwV"/>
+                                    <constraint firstAttribute="bottom" secondItem="JBs-Ob-Xn5" secondAttribute="bottom" id="yiU-58-Es1"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q9T-Nq-3mI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Ef-bT-cTB"/>
+                            <constraint firstAttribute="trailing" secondItem="Q9T-Nq-3mI" secondAttribute="trailing" id="YEG-pC-pnD"/>
+                            <constraint firstItem="Q9T-Nq-3mI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bWz-f2-qCp"/>
+                            <constraint firstItem="Q9T-Nq-3mI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sOy-Zr-boy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -32,4 +69,8 @@
             <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="windowShopperBG" width="414" height="736"/>
+        <image name="windowShopperIcon" width="115" height="115"/>
+    </resources>
 </document>
